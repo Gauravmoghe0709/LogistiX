@@ -46,9 +46,7 @@ const Home = () => {
           </div>
 
         </div>
-          ))}
-        
-      </div>
+          ))}</div>
       <footer className="bg-gray-900 text-white px-6 py-10 mt-10 cursor-default">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
         <div>
@@ -83,7 +81,7 @@ const Home = () => {
           <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
           <p className="text-sm">📍 New Delhi, India</p>
           <p className="text-sm">📞 +91 98765 43210</p>
-          <p className="text-sm">📧 support@logifast.com</p>
+          <p className="text-sm">📧 support@logistiX.com</p>
           <div className="flex gap-4 mt-3">
             <img src="./img/instagram (1).png" className="h-8 w-8" /> 
             <img src="./img/communication.png" className="h-8 w-8" />
@@ -97,7 +95,7 @@ const Home = () => {
         © {new Date().getFullYear()} logistiX. All rights reserved.
       </div>
     </footer>
-
+ 
 
 
 

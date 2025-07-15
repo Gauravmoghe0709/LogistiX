@@ -63,9 +63,32 @@ const LogistixCard = ({children}) => {
     }
     
    ])
+   const [ourservice, setourservice] = useState([
+    {
+      id:nanoid(),
+      title:"Two-Wheeler Delivery",
+      emoji: "🛵"
+    },
+    {
+      id:nanoid(),
+      title:"Truck Transport",
+      emoji: "🚛" 
+    },
+    {
+      id:nanoid(),
+      title:"Packers & Movers",
+      emoji: "📦"
+    },
+    {
+      id:nanoid(),
+      title:"Courier Services",
+      emoji: "✈️"
+    },
+
+   ])
     
   return (
-    <allcards.Provider value={{servicecard, setservicecard,Testimonials,setTestimonials}}>
+    <allcards.Provider value={{servicecard, setservicecard,Testimonials,setTestimonials,ourservice, setourservice}}>
         {children}
     </allcards.Provider>
   )
