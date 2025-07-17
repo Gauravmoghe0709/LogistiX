@@ -13,6 +13,7 @@ const Logistixroute = () => {
             <Route path="/login" element={<Login></Login>}></Route>
             <Route path="/Booking" element={<Booking></Booking>}></Route>
         </Routes>
+        
     </>
   )
 }
