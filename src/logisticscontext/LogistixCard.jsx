@@ -68,7 +68,7 @@ const LogistixCard = ({children}) => {
       id:nanoid(),
       title:"Two-Wheeler Delivery",
       emoji: "🛵"
-    },
+    }, 
     {
       id:nanoid(),
       title:"Truck Transport",
