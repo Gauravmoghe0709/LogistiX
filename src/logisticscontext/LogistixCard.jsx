@@ -86,9 +86,10 @@ const LogistixCard = ({children}) => {
     },
 
    ])
+   
     
   return (
-    <allcards.Provider value={{servicecard, setservicecard,Testimonials,setTestimonials,ourservice, setourservice}}>
+    <allcards.Provider value={{servicecard, setservicecard,Testimonials,setTestimonials,ourservice, setourservice,}}>
         {children}
     </allcards.Provider>
   )

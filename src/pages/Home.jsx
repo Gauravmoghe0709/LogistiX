@@ -9,8 +9,6 @@ const Home = () => {
   const { Testimonials, setTestimonials } = useContext(allcards)
   
   const [trackid, settrackid] = useState("")
-
-
   const bookinghandle = () => {
     console.log("booking...")
     navigate("/booking")
@@ -18,8 +16,9 @@ const Home = () => {
   const trackinghandle=(e)=>{
         e.preventDefault();
        console.log(trackid)
-       
+       navigate("/Tracking details")
   }
+  
 
   return (
     <>
@@ -55,8 +54,10 @@ const Home = () => {
           </div>
         ))}
       </div>
+      
 
-      <div className="bg-gray-200 shadow-lg rounded-xl p-6 w-full max-w-md mx-auto mt-15">
+
+      <div className=" border-1 border-gray-500 shadow-lg rounded-xl p-6 w-full max-w-md mx-auto mt-15">
         <h2 className="text-xl font-bold text-gray-800 text-center">
         Track Your Shipment
       </h2>
@@ -128,10 +129,7 @@ const Home = () => {
           © {new Date().getFullYear()} logistiX. All rights reserved.
         </div>
       </footer>
-
-
-
-
+      
     </>
   )
 }
