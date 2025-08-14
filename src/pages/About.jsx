@@ -1,10 +1,13 @@
 import { useContext } from 'react'
 import { allcards } from '../logisticscontext/LogistixCard'
+import { useNavigate } from 'react-router-dom'
 
 const About = () => {
   const { ourservice, setourservice } = useContext(allcards)
-
-  console.log(ourservice)
+    const navigate = useNavigate()
+  const handleservices =()=>{
+    navigate("/Services")
+  }
   return (
     <>
       <section className='cursor-default bg-white text-gray-800 px-6 py-12 md:px-20'>
@@ -42,6 +45,7 @@ const About = () => {
                 <p className="text-gray-600 mt-2 text-sm">
                   Reliable and cost-effective delivery tailored for every need.
                 </p>
+                <button className='float-right mt-4 text-sm text-blue-700' onClick={handleservices}>Read more...</button>
               </div>
             ))}
           </div>

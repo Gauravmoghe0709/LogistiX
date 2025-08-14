@@ -9,6 +9,7 @@ const Navbar = () => {
       <NavLink className={(e)=>e.isActive?"text-blue-800":""}  to="/">Home</NavLink>
       <NavLink className={(e)=> e.isActive?"text-blue-800":""} to="/about">About us</NavLink>
       <NavLink className={(e)=>e.isActive?"text-blue-800":""} to="/login" >Login</NavLink>
+     
       </div>
       </div>
     </>

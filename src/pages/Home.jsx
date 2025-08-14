@@ -15,8 +15,7 @@ const Home = () => {
   }
   const trackinghandle=(e)=>{
         e.preventDefault();
-       console.log(trackid)
-       navigate("/Tracking details")
+       navigate(`/tracking details/${trackid}`)
   }
   
 
